@@ -2,8 +2,6 @@ package com.callcenter.main;
 
 import java.util.Iterator;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 import com.callcenter.model.Fresher;
 

@@ -28,7 +28,7 @@ public class Employee {
 			//Set available to true assuming that after trying to solve the problem the call will end either it was solved or not
 			setAvailable(true);
 		}
-		return randomGenerator("solve");
+		return randomGenerator();
 	}	
 	
 	//Escalate problem to employee's higher up
@@ -41,7 +41,7 @@ public class Employee {
 	}
 	
 	//Random generator for dice
-	private boolean randomGenerator(String action) {
+	private boolean randomGenerator() {
 		Random dice = new Random();
 		boolean result = dice.nextBoolean();
 		
