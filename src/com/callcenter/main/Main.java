@@ -14,15 +14,14 @@ public class Main {
 		
 		List<Fresher> freshers = createFreshers();
 		//get freshers size
-		int  freshersSize  =    freshers.size();
-		int  maxPoolSize   =   freshersSize;
+		int  maxPoolSize   =   freshers.size();
 		
 		//Assume 25 callers
 		int callers = 25;
-
+		
 		ThreadPoolExecutor callsPool =
 		        new ThreadPoolExecutor(
-		        		freshersSize,
+		        		maxPoolSize,
 		                maxPoolSize,
 		                0L,
 		                TimeUnit.MILLISECONDS,

@@ -12,6 +12,10 @@ public class Employee {
 	public boolean isAvailable() {
 		//store available result 
 		boolean result = available;
+		
+		//Uncomment if you want a randomize availability of employee
+//		Random dice = new Random();
+//		boolean result = dice.nextBoolean();
 		if (available) {
 			//Set available to false assuming that being available he/she have taken the call
 			setAvailable(false);
