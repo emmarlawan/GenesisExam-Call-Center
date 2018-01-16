@@ -1,6 +1,6 @@
 package com.callcenter.model;
 
-import java.util.Random;
+import com.callcenter.util.Randomizer;
 
 public class Employee {
 
@@ -27,12 +27,18 @@ public class Employee {
 	}
 	
 	//Determine if problem can be solved by employee
-	public boolean solveProblem() {		
+	public boolean solveProblem() {
+		boolean result = Randomizer.randomGenerator();
 		if (!available) {
 			//Set available to true assuming that after trying to solve the problem the call will end either it was solved or not
 			setAvailable(true);
 		}
-		return randomGenerator();
+		if (result) {
+			System.out.println(getName()+ " solved problem");
+		} else {
+			System.out.println(getName()+ " can't solve sroblem");
+		}
+		return result;
 	}	
 	
 	//Escalate problem to employee's higher up
@@ -44,21 +50,7 @@ public class Employee {
 		}
 	}
 	
-	//Random generator for dice
-	private boolean randomGenerator() {
-		Random dice = new Random();
-		boolean result = dice.nextBoolean();
-		
-		if (result) {			
-			System.out.println(getName()+ " Problem solved");
-			
-			return true;
-		} else {			
-			System.out.println(getName()+ " Could not solve problem");
-			
-			return false;
-		}
-	}
+	
 
 	public String getName() {
 		return name;

@@ -19,14 +19,14 @@ public class ProjectManager extends Employee {
 	@Override
 	public boolean isAvailable() {
 		// Assuming PM always available;		
-		System.out.println(getName() + " is Available");
+		System.out.println(getName() + " is available");
 		return true;
 	}
 	
 	@Override
 	public boolean solveProblem() {
 		// Assuming PM can always solve the problem;
-		System.out.println(getName() + " Solved Problem");
+		System.out.println(getName() + " solved problem");
 		return true;
 	}
 	
