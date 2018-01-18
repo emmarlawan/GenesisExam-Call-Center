@@ -5,8 +5,8 @@ import java.util.List;
 
 import com.callcenter.bean.ActionResult;
 import com.callcenter.bean.Fresher;
-import com.callcenter.impl.EmployeeActionImpl;
-import com.callcenter.interfaces.EmployeeAction;
+import com.callcenter.process.EmployeeAction;
+import com.callcenter.process.impl.EmployeeActionImpl;
 
 public class Call implements Runnable {
 	
