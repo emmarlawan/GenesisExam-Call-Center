@@ -6,7 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import com.callcenter.model.Fresher;
+import com.callcenter.bean.Fresher;
 
 public class Main {
 	
